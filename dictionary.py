@@ -1,14 +1,18 @@
 class Dictionary:
     def __init__(self):
-        pass
+        self.words = []
 
     def loadDictionary(self,path):
-        pass
+        self.words = path.split()
+        return self.words
+
 
     def printAll(self):
-        pass
+        for word in self.words:
+            print(word)
 
 
     @property
     def dict(self):
         return self._dict
+
